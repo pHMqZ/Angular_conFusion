@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Dish } from '../shared/dish';
 
+
 const DISHES: Dish[] = [{
   id: '0',
   name: 'Uthappizza',
@@ -50,6 +51,7 @@ const DISHES: Dish[] = [{
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+
 
   dishes = DISHES;
 
