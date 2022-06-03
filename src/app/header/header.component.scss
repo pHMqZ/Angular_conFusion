@@ -2,7 +2,6 @@ $lt-gray: #ddd;
 $background-dark: #353f7a;
 $background-light: #677ae6;
 $background-pale: #8999f3;
-
 $background-moredark: #172675;
 
 @mixin zero-margin($pad-up-down, $pad-left-right) {
@@ -18,5 +17,5 @@ $background-moredark: #172675;
 }
 
 .active {
-
+    background: $background-moredark;
 }
