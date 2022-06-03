@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 import { Dish } from '../shared/dish';
 import { DishService } from '../service/dish.service';
 import { Promotion } from '../shared/promotion';
 import { PromotionService } from '../service/promotion.service';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
