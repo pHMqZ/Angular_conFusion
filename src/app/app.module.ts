@@ -18,6 +18,12 @@ import { DishService } from './service/dish.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PromotionService } from './service/promotion.service';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +31,9 @@ import { PromotionService } from './service/promotion.service';
     MenuComponent,
     DishdetailComponent,
     HeaderComponent,
-    FooterComponent
+    AboutComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
