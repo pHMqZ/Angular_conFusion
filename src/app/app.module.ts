@@ -21,6 +21,7 @@ import { PromotionService } from './service/promotion.service';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { LeaderService } from './service/leader.service';
 
 
 
@@ -49,7 +50,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   providers: [
     DishService,
-    PromotionService
+    PromotionService,
+    LeaderService
   ],
   bootstrap: [AppComponent]
 })
