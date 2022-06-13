@@ -62,8 +62,12 @@
             </mat-list-item>
         </mat-list>
     </div>
-    <div [hidden]="leader">
+    <div [hidden]="leader ||leadErrMess">
         <mat-spinner></mat-spinner>
         <h4>Loading . . . Please Wait</h4>
+    </div>
+    <div fxFlex *ngIf="leadErrMess">
+        <h2>Error</h2>
+        <h4>{{leadErrMess}}</h4>
     </div>
 </div>
