@@ -6,6 +6,7 @@ import {DishService} from '../services/dish.service';
 import {switchMap} from 'rxjs/operators';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Comment} from '../shared/comment';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-dishdetail',
@@ -18,7 +19,7 @@ export class DishdetailComponent implements OnInit {
   dishIds: string[];
   prev: string;
   next: string;
-
+  errMess: string
   @ViewChild('cform') commentFormDirective;
   commentForm: FormGroup;
   comment: Comment;
@@ -53,7 +54,7 @@ export class DishdetailComponent implements OnInit {
       .subscribe(dish => {
         this.dish = dish;
         this.setPrevNext(dish.id);
-      });
+      }, errmess => this.errMess = <any>errmess);
   }
 
   createForm() {
