@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     this.dishService.getFeaturedDish()
       .subscribe(dish => this.dish = dish, errmess => this.dishErrMess= <any> errmess);
 
-
+    
     this.promotionService.getFeaturedPromotion()
       .subscribe(promotion => this.promotion = promotion);
 

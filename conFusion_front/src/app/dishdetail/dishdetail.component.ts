@@ -6,7 +6,6 @@ import {DishService} from '../services/dish.service';
 import {switchMap} from 'rxjs/operators';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Comment} from '../shared/comment';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-dishdetail',
