@@ -1,7 +1,5 @@
 import {Component, OnInit, Inject, Injectable} from '@angular/core';
 import {Dish} from '../shared/dish';
-// import {DISHES} from '../shared/dishes';
-// import {delay} from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
@@ -15,6 +13,7 @@ import { baseURL } from '../shared/baseurl';
   providedIn: 'root'
 })
 export class DishService {
+
 
   constructor(private http: HttpClient, private processHTTPMsgService: ProcessHTTPMsgService) {
   }
