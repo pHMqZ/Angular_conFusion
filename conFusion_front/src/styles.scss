@@ -1,12 +1,12 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import 'variables';
-//@import '../node_modules/font-awesome/scss/font-awesome';
+@import '../node_modules/font-awesome/scss/font-awesome';
 $lt-gray: #ddd;
-$background-dark: #512DA8;
+$background-dark: #2d3fa8;
 $background-light: #3f51b5;
-$background-pale: #D1C4E9;
-$primary-color-dark: #512DA8;
-$primary-color: #673AB7;
+$background-pale: #bec6eb;
+$primary-color-dark: #3f2da8;
+$primary-color: #3a57b7;
 $primary-color-light: #D1C4E9;
 $primary-color-text: #FFFFFF;
 $accent-color: #FFC107;
@@ -43,4 +43,11 @@ body {
 
 .flex-spacer {
     flex: 1 1 auto;
+}
+
+.highlight {
+    background-color: $background-pale;
+    border: 1px solid $primary-color-dark;
+    z-index: 1;
+    transform: scale(1.01);
 }
